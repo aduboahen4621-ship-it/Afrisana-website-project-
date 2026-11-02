@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #183326;
+    line-height: 1.6;
+}
+
+header {
+    background: #176b45;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #c5e8c5;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(10, 70, 40, 0.75),
+        rgba(10, 70, 40, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc");
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    background: #176b45;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.whatsapp {
+    background: #25d366;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #176b45;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f2f8f2;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid #dcebdc;
+}
+
+.card h3 {
+    color: #176b45;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card a {
+    color: #176b45;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info {
+    margin: 25px 0;
+}
+
+footer {
+    background: #104b32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
